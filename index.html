@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XV Belem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="bg-img">
+      <div>
+        <h1 class="titlePortada fw-700 text-center text-white mb-4 lh-1">
+          Belem
+        </h1>
+        <h3
+          class="subtitlePortada ls-5 text-white text-center py-3 px-3 text-uppercase m-0 lh-1 fw-400"
+        >
+          ¡Mis quince!
+        </h3>
+        <div class="py-sm-5 py-2 my-sm-5 my-2 text-center">
+          <span class="bg-tertiary px-4 py-2 text-white datePortada fw-700"
+            >17.04.2026</span
+          >
+        </div>
+      </div>
+    </section>
+
+     <section id="location">
+      <div class="container">
+        <div>
+          <div class="row">
+            <div class="col-sm-4">
+              <img
+                src="img/janos.png"
+                alt="Janos"
+                class="img-fluid mx-auto d-block"
+              />
+              <div class="ratio ratio-1x1">::before</div>
+            </div>
+            <div class="col-sm-6">
+              <div class="flex-fill">
+                <h4>Janos Haedo</h4>
+                <p>Av. Presidente Perón 1742</p>
+                <div>21.30 h</div>
+                <a
+                  href="https://www.google.com/maps/dir//Jano's+Haedo,+CFP,+Av.+Pres.+Per%C3%B3n+1742,+B1706+Mor%C3%B3n,+Provincia+de+Buenos+Aires,+Argentina/@-34.7010986,-58.2918552,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x95bcc79b0927fe5d:0x9f48a7eee1800c84!2m2!1d-58.5889595!2d-34.6356508?entry=ttu&g_ep=EgoyMDI2MDEyNS4wIKXMDSoASAFQAw%3D%3D"
+                  class="btn"
+                  target="_blank"
+                  >Ver ubicación</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Cuenta Regresiva -->
+    <section id="countdown-section">
+      <div class="container">
+        <h2 class="countdown-title">Faltan</h2>
+        <div id="countdown" class="countdown-container">
+          <div class="countdown-item">
+            <span id="days" class="countdown-number">00</span>
+            <span class="countdown-label">Días</span>
+          </div>
+          <div class="countdown-item">
+            <span id="hours" class="countdown-number">00</span>
+            <span class="countdown-label">Horas</span>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes" class="countdown-number">00</span>
+            <span class="countdown-label">Minutos</span>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds" class="countdown-number">00</span>
+            <span class="countdown-label">Segundos</span>
+          </div>
+        </div>
+        <a href="https://calendar.google.com/calendar/u/0/r/eventedit?dates=20260418T003000Z/20260418T080000Z&pli=1" class="btn-calendario" target="_blank">Agregar al calendario</a>
+      </div>
+    </section>
+
+   
+
+    <!-- Sección Carrousel de Fotos -->
+    <section id="carousel">
+      <div class="container">
+        <h2 class="carousel-title">📷</h2>
+        <div class="carousel-container">
+          <button class="carousel-btn prev" id="prevBtn">‹</button>
+          <div class="carousel-track">
+            <div class="carousel-item">
+              <img src="img/disco.jpeg" alt="Disco" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/vogue.jpeg" alt="Vogue" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/espejo1.jpeg" alt="Espejo 1" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/espejo2.jpeg" alt="Espejo 2" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/espejo3.jpeg" alt="Espejo 3" />
+            </div>
+            <div class="carousel-item">
+              <img src="img/espejo4.jpeg" alt="Espejo 4" />
+            </div>
+          </div>
+          <button class="carousel-btn next" id="nextBtn">›</button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <script src="countdown.js"></script>
+    <script src="carousel.js"></script>
+
+    <!-- Sección Confirmar Asistencia -->
+    <section id="asistencia">
+      <div class="container">
+        <h2 class="asistencia-title">¿Venís?</h2>
+        <p class="asistencia-text">Por favor, confirmá tu asistencia para poder organizar mejor la celebración.</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8fib_cWlFLv5sJm5nB6vOmdrQgLF0zWCKAa0b2gmt50OrdQ/viewform" class="btn-asistencia" target="_blank">Confirmar Asistencia</a>
+      </div>
+    </section>
+
+    <!-- Sección Regalo -->
+    <section id="regalo">
+      <div class="regalo-overlay"></div>
+      <div class="regalo-content">
+        <p class="regalo-text">"El mejor regalo es que vengas a compartir esta noche mágica conmigo"</p>
+      </div>
+    </section>
+
+    <!-- Sección Código de Vestimenta -->
+    <section id="codigovestimenta">
+      <div class="container">
+        <h2 class="vestimenta-title">Código de vestimenta</h2>
+        <p class="vestimenta-text">Se solicita concurrir con vestimenta elegante.</p>
+        <p class="vestimenta-text">Las damas deberán evitar el uso de prendas de color: <strong>dorado, plateado, blanco o azul</strong>.</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>Hecho con amor ❤️ por Diani</p>
+    </footer>
+  </body>
+</html>
