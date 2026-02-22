@@ -441,7 +441,8 @@ body {
 }
 
 /* Sección Carousel */
-#carousel {
+#carousel,
+#carousel-baby {
     padding: 4rem 1rem;
     background-color: #FFF8E8;
 }
