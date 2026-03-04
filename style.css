@@ -457,6 +457,17 @@ body {
     letter-spacing: 2px;
 }
 
+.alias-highlight {
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    font-weight: 100;
+    font-family: "Montserrat Alternates", sans-serif;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
 .carousel-container {
     position: relative;
     max-width: 1200px;
